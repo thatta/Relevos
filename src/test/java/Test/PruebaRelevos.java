@@ -38,15 +38,7 @@ public class PruebaRelevos {
     @After
     public void tearDown() {
     }
-    @Test
-    public void avanzar() {
-        Equipo equipo2 = new Equipo("Colombia", 0, 100);
-        Atleta atleta = new Atleta(equipo2, 33, 66);
-
-        int resultadoAvanzar = atleta.avanzar(1);
-        int resultadoEsperado = 3;
-        assertEquals(resultadoEsperado, resultadoAvanzar);
-    }
+    
     @Test
     public void testRandom() {
         System.out.println("Test Random");
@@ -67,7 +59,7 @@ public class PruebaRelevos {
                 break;
             default:
                 System.out.println("Numero generado "+result);
-                fail("numero fuera del rango 1-3");
+                fail("numero fuera del rango de 1 a 3");
                 break;
         }
     }
